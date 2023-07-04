@@ -11,3 +11,13 @@ class Thing(models.Model):
 
     def __str__(self):
         return self.Thing_name # this is what will show up in the admin page
+    
+
+class Post(models.Model):
+    title = models.CharField(max_length=255)
+    desc = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self): # this is what will show up in the admin page
+        return self.title
