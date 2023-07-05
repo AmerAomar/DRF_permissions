@@ -1,7 +1,7 @@
-# Lab Class 31 --- Django REST Framework & Docker
+# Lab Class 31 --- Django REST Framework permissions and postgres using Docker
 <!-- this is the link for docker image contaier http://localhost:8000/api/v1/things   -->
 
-## project name: DRF Docker
+## project name: DRF Permissions and Postgres using Docker
 
 ## Author: Amer Al-omari
 
@@ -23,7 +23,7 @@ python manage.py runserver
 python manage.py test
 ```
 
-## how to run the docker image ?
+## how to Create Docker image ?
 
 ```bash
 docker-compose up  # if the link from the compose did not  run, use this link: http://localhost:8000/api/v1/things
