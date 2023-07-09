@@ -1,7 +1,7 @@
-# Lab Class 31 --- Django REST Framework permissions and postgres using Docker
+# Lab Class 33 --- Authentication & Production Server
 <!-- this is the link for docker image contaier http://localhost:8000/api/v1/things   -->
 
-## project name: DRF Permissions and Postgres using Docker
+## project name:  Auth & Production Server
 
 ## Author: Amer Al-omari
 
