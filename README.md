@@ -28,3 +28,49 @@ python manage.py test
 ```bash
 docker-compose up  # if the link from the compose did not  run, use this link: http://localhost:8000/api/v1/things
 ```
+
+## Routes
+
+### Token genration
+
+- Method: POST
+- Endpoint: /api/token/
+- Required token: No
+
+### Token refresh
+
+- Method: POST
+- Endpoint: /api/token/refresh/
+- Required token: Yes (refresh token)
+
+### CRUD Routes
+
+---
+
+- Method: GET
+- Endpoint: /api/v1/things/
+- Required token: Yes
+
+---
+
+- Method: POST
+- Endpoint: /api/v1/things/
+- Required token: Yes
+
+---
+
+- Method: GET
+- Endpoint: /api/v1/things/`<id>`/
+- Required token: Yes
+
+---
+
+- Method: PUT
+- Endpoint: /api/v1/things/`<id>`/
+- Required token: Yes
+
+---
+
+- Method: DELETE
+- Endpoint: /api/v1/things/`<id>`/
+- Required token: Yes
