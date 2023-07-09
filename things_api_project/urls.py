@@ -16,9 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include # we are adding include bc we are going to include the urls from the things app
-
+from rest_framework_simplejwt import views as jwt_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/things/', include('Things.urls')), # this is the url that we are going to use to access the things app, api/v1/things is the url that we are going to use to access the things app
     path("api-auth/", include("rest_framework.urls")), 
+    path('api/token/', jwt_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('api/token/refresh/', jwt_views.TokenRefreshView.as_view(), name='token_refresh')
 ]
